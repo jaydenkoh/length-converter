@@ -96,16 +96,26 @@
 <body>
 
   <h2>503</h2>
-  <h1><span style="color: black;">Page Und</span>er Con<span style="color: black;">struction</span></h1>
+  <h1><span style="color: black;">Page Under Construction</h1>
 
-  <p><span style="color: white;">We’re sor</span><span style="color: black;">ry but it appears that this page you were</span> looking for is <span style="font-weight: bold;color: black;">under construction</span>. <span style="color: black;">Usually this occurs bec</span><span style="color: white;">ause this page is n</span>ot <span style="color: white;">done</span> or <span style="color: black;">released for live <span style="color: white;">preview.</span></span></p>
+  <p><span style="color: black;">We’re sorry but it appears that this page you were looking for is <span style="font-weight: bold;">under construction</span>. Usually this occurs because this page is not done or released for live preview.</p>
 
   <span class="go-back"><a href="#" onclick="backjs()">Go back</a></span>
+  <span class="go-back"><a href="#" onclick="removeBG()">Remove Background</a></span>
 
   <script>
 function backjs() {
   window.history.back();
 }
+</script>
+
+<script>
+  function removeBG() {
+			element = 
+			document.styleSheets[0].cssRules[0].style; 
+			element.removeProperty('background-image');
+       
+  }
 </script>
 
 </body>
